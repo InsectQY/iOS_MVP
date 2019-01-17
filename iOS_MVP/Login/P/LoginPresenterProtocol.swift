@@ -10,14 +10,14 @@ import Foundation
 
 protocol LoginPresenterProtocol: class {
     
-    /// 显示提示
-    func showToast(_ text: String)
     /// 登录
     func login()
+    /// 显示提示
+    func showToast(_ text: String)
     /// 登录请求中
     func loading()
-    /// 登录成功
+    /// 网络请求返回, 登录成功
     func loginSuccess(_ response: User)
-    /// 登录失败
+    /// 网络请求返回, 登录失败
     func loginFailure(_ error: String)
 }
