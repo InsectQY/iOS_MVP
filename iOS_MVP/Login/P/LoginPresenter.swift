@@ -37,8 +37,8 @@ extension LoginPresenter: Presenterable {
 // MARK: - LoginPresenterProtocol
 extension LoginPresenter: LoginPresenterProtocol {
     
-    func login(account: String, pwd: String) {
-        model?.login(account: account, pwd: pwd)
+    func login() {
+        model?.login(account: view?.account(), pwd: view?.password())
     }
     
     func loading() {

@@ -185,8 +185,8 @@
 		E53E69E421F083BD0062A8FD /* C */ = {
 			isa = PBXGroup;
 			children = (
-				E53E69E521F083BD0062A8FD /* LoginViewController.xib */,
 				E53E69E621F083BD0062A8FD /* LoginViewController.swift */,
+				E53E69E521F083BD0062A8FD /* LoginViewController.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";

@@ -11,5 +11,5 @@ import Foundation
 protocol LoginModelProtocol: class {
     
     /// 登录逻辑处理
-    func login(account: String, pwd: String)
+    func login(account: String?, pwd: String?)
 }

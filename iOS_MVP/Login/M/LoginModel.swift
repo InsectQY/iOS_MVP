@@ -20,8 +20,13 @@ class LoginModel {
 // MARK: - LoginModelProtocol
 extension LoginModel: LoginModelProtocol {
     
-    func login(account: String, pwd: String) {
+    func login(account: String?, pwd: String?) {
         
+        guard let account = account, let pwd = pwd else {
+            
+            present?.showToast("账号密码不合法") 
+            return
+        }
         if account.count == 0 || pwd.count == 0 {
             
             present?.showToast("账号密码不合法")

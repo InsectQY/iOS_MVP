@@ -10,6 +10,8 @@ import Foundation
 
 protocol LoginViewProtocol: class {
     
+    func account() -> String
+    func password() -> String
     func showLoading()
     func showToast(_ text: String)
     func loginSuccess(_ response: User)

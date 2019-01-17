@@ -13,7 +13,7 @@ protocol LoginPresenterProtocol: class {
     /// 显示提示
     func showToast(_ text: String)
     /// 登录
-    func login(account: String, pwd: String)
+    func login()
     /// 登录请求中
     func loading()
     /// 登录成功

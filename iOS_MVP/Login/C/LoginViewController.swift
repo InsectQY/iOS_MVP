@@ -30,12 +30,20 @@ class LoginViewController: UIViewController {
     
     // MARK: - 点击登录
     @IBAction func loginBtnDidClick() {
-        present?.login(account: accountTF.text ?? "", pwd: pwdTF.text ?? "")
+        present?.login()
     }
 }
 
 // MARK: - LoginViewProtocol
 extension LoginViewController: LoginViewProtocol {
+    
+    func account() -> String {
+        return accountTF.text ?? ""
+    }
+    
+    func password() -> String {
+        return pwdTF.text ?? ""
+    }
     
     func showLoading() {
         Toast.loading()
